@@ -3,21 +3,24 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800,800italic); /*Open Sans*/
 
 body{
-	background-color: #FCFAF5;
+	background-color: #FEFAE9;
 }
 
 p {
 	font-family: Merriweather;
 	font-weight: 300;
-	font-size: 0.7em; 
+	font-size: 1em; 
+	line-height: 2.1em;
 	color: #252B38;
 }
 
 h1{
 	font-family: Montserrat;
 	font-weight: 700;
-	font-size: 2em;
+	font-size: 3.5em;
+	text-transform: capital;
 	color: #000;
+	padding-bottom: .4em;
 }
 
 a {
@@ -27,15 +30,49 @@ a {
 
 blockquote {
 	font-family: Open Sans;
-	font-weight: 300italic;
-	font-size: 0.6em;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1.06em;
+	line-height: 2.4em;
 	color:#252B38;
 }
 
-.txt {
-	padding:0.2em;
+.portada {
+	padding: 4em;
+}
+
+.portada p{
+	font-size: 1.4em;
+	color: #000;
+	font-style: italic;
+	border-top: 2px solid #AF8401;
+	max-width: 10em;
+	padding-top: 0.6em;
+}
+
+.recorridos{
+	padding: 4em;
+	background-color: #F7EADD;
+}
+
+.linea {
+	background-color:#000;
+	height: 2px;
+	max-width: 3em;
+}
+
+.txt-derecha {
+	padding:1em;
 	margin:0 auto;
 	display: block;
 	z-index: 20;
+	float: right;
+}
 
+.txt-izquierda {
+	padding:1em;
+	margin:0 auto;
+	display: block;
+	z-index: 20;
+	float: right;
 }
