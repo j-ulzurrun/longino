@@ -1,3 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic); /*Merriweather*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700); /*Montserrat*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800,800italic); /*Open Sans*/
+
+body{
+	background-color: #FCFAF5;
+}
+
 p {
-	color:red;
-}	
+	font-family: Merriweather;
+	font-weight: 300;
+	font-size: 0.7em; 
+	color: #252B38;
+}
+
+h1{
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 2em;
+	color: #000;
+}
+
+a {
+	color:#AF8401;
+	text-decoration: none;
+}
+
+blockquote {
+	font-family: Open Sans;
+	font-weight: 300italic;
+	font-size: 0.6em;
+	color:#252B38;
+}
+
+.txt {
+	padding:0.2em;
+	margin:0 auto;
+	display: block;
+	z-index: 20;
+
+}
