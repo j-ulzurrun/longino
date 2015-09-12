@@ -55,15 +55,23 @@ blockquote {
 	color:#252B38;
 }
 
+img {
+	width:100%;
+}
+
 /*													 CONTENEDORES */
 
 .portada {
 	width: 100%;
+	padding-top: 8em;
+	padding-bottom: 4em;
 }
 
 .recorridos{
 	background-color: #F7EADD;
 	width: 100%;
+	padding-top: 4em;
+	padding-bottom: 6em;
 }
 
 /* separador de titulos */
