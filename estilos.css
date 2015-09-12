@@ -41,6 +41,12 @@ h3 {
 	text-align: center;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a {
 	color:#AF8401;
 	text-decoration: none;
@@ -59,15 +65,16 @@ img {
 	width:100%;
 }
 
+
 /*													 CONTENEDORES */
 
 .portada {
 	width: 100%;
-	padding-top: 8em;
+	padding-top: 6em;
 	padding-bottom: 4em;
 }
 
-.recorridos{
+.recorridos {
 	background-color: #F7EADD;
 	width: 100%;
 	padding-top: 4em;
@@ -82,12 +89,12 @@ img {
 	margin: 0 auto;
 }
 
-.row {
-	width: 100%;
-	display: block;
-}
 
 /*													TIPOGRAFIAS */
+.centro{
+	max-width: 20em;
+	margin: 0 auto;
+}
 
 .portada p{
 	font-size: 1.4em;
@@ -95,14 +102,14 @@ img {
 	font-style: italic;
 	border-top: 2px solid #AF8401;
 	max-width: 10em;
-	padding-top: 0.6em;
+	padding-top: .6em;
 }
 
-.bajada {
+.recorridos p {
 	font-family: Merriweather;
 	font-weight: 300;
 	font-style: italic;
-	font-size: 0.86em;
+	font-size: .86em;
 	letter-spacing: .03em;
 	color: #2C2C2C;
 	text-align: center;
