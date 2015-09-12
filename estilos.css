@@ -11,16 +11,34 @@ p {
 	font-weight: 300;
 	font-size: 1em; 
 	line-height: 2.1em;
-	color: #252B38;
+	color: #2C2C2C;
 }
 
 h1{
 	font-family: Montserrat;
 	font-weight: 700;
-	font-size: 3.5em;
+	font-size: 3.2em;
 	text-transform: capital;
 	color: #000;
 	padding-bottom: .4em;
+}
+
+h2 {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 1.6em;
+	letter-spacing: .1em;
+	text-align: center;
+	color: #2C2C2C;
+}
+
+h3 {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 1.1em;
+	letter-spacing: .2em;
+	padding-top: 2em;
+	text-align: center;
 }
 
 a {
@@ -37,9 +55,31 @@ blockquote {
 	color:#252B38;
 }
 
+/*													 CONTENEDORES */
+
 .portada {
-	padding: 4em;
+	width: 100%;
 }
+
+.recorridos{
+	background-color: #F7EADD;
+	width: 100%;
+}
+
+/* separador de titulos */
+.linea {
+	background-color:#AF8401;
+	height: 2px;
+	max-width: 3em;
+	margin: 0 auto;
+}
+
+.row {
+	width: 100%;
+	display: block;
+}
+
+/*													TIPOGRAFIAS */
 
 .portada p{
 	font-size: 1.4em;
@@ -50,15 +90,15 @@ blockquote {
 	padding-top: 0.6em;
 }
 
-.recorridos{
-	padding: 4em;
-	background-color: #F7EADD;
-}
-
-.linea {
-	background-color:#000;
-	height: 2px;
-	max-width: 3em;
+.bajada {
+	font-family: Merriweather;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 0.86em;
+	letter-spacing: .03em;
+	color: #2C2C2C;
+	text-align: center;
+	line-height: 0;
 }
 
 .txt-derecha {
