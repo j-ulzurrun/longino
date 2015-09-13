@@ -2,6 +2,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700); /*Montserrat*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800,800italic); /*Open Sans*/
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body{
 	background-color: #FEFAE9;
 }
@@ -18,7 +24,6 @@ h1{
 	font-family: Montserrat;
 	font-weight: 700;
 	font-size: 3.2em;
-	text-transform: capital;
 	color: #000;
 	padding-bottom: .4em;
 }
@@ -41,22 +46,20 @@ h3 {
 	text-align: center;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 a {
 	color:#AF8401;
 	text-decoration: none;
 }
 
+section {
+  height: 100vh;
+}
+
 blockquote {
-	font-family: Open Sans;
+	font-family: Merriweather;
 	font-style: italic;
-	font-weight: 400;
-	font-size: 1.06em;
+	font-weight: 300;
+	font-size: 1em;
 	line-height: 2.4em;
 	color:#252B38;
 }
@@ -87,13 +90,20 @@ img {
 	height: 2px;
 	max-width: 3em;
 	margin: 0 auto;
+} 
+
+.row {
+	background-color: #F7EADD;
+	z-index: 3;
 }
 
 
 /*													TIPOGRAFIAS */
+
 .centro{
-	max-width: 20em;
+	max-width: 250px;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .portada p{
@@ -122,6 +132,9 @@ img {
 	display: block;
 	z-index: 20;
 	float: right;
+	background-color:#FEFAE9;
+	text-align: justify;
+
 }
 
 .txt-izquierda {
@@ -130,4 +143,21 @@ img {
 	display: block;
 	z-index: 20;
 	float: right;
+}
+
+.fuente {
+	font-family: Merriweather;
+	font-weight: 300;
+	font-style: italic;
+	font-size: .86em;
+	letter-spacing: .03em;
+	text-align: right;
+	color: #7E7E7E;
+	padding-top: .3em;
+}
+
+/*												SECCIONES*/
+.calera {
+	background: url(img/01.jpg);
+	background-size: 100%;
 }
