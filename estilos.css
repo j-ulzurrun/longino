@@ -90,6 +90,7 @@ img {
 .centro {
 	max-width: 20em;
 	margin: 0 auto;
+	padding: 0 !important;
 }
 
 /* centrado vertical */
