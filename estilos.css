@@ -9,7 +9,7 @@
 }
 
 body{
-	background-color: #FEFAE9;
+	background-color: #FFFEFB;
 	height: 100%;
 }
 
@@ -25,10 +25,18 @@ h1{
 	font-family: Montserrat;
 	font-weight: 700;
 	font-size: 3.2em;
-	color: #FEFAE9;
+	color: #FFFEFB;
 	padding-bottom: .4em;
-	text-shadow: 3px 3px rgba(0,0,0,0.23);
+	text-shadow: 2px 2px rgba(0,0,0,0.23);
+	display: block;
+	margin-left: 20%;
 }
+
+@media screen and (max-width: 960px){
+		h1 {
+			margin-left:2%;
+		}
+	}
 
 h2 {
 	font-family: Montserrat;
@@ -53,10 +61,6 @@ a {
 	text-decoration: none;
 }
 
-section {
-  height: 100vh;
-}
-
 blockquote {
 	font-family: Merriweather;
 	font-style: italic;
@@ -69,9 +73,11 @@ blockquote {
 img {
 	width:100%;
 	height: 100%;
-	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
 }
 
+section{
+	height: 100vh;
+}
 
 /*													 CONTENEDORES */
 
@@ -88,20 +94,20 @@ img {
 
 .recorridos {
 	margin-top: 100vh;
-	background-color: #F7EADD;
+	background-color: #FDF9F4;
 	width: 100%;
 	padding-top: 4em;
 	padding-bottom: 6em;
 	height: 100vh;
-	box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px -3px 3px -3px rgba(0,0,0,0.75);
 }
 
-/* centrado horizontal */
+/* centrado horizontal 
 .centro {
 	max-width: 14em;
 	margin: 0 auto;
 	padding: 0 !important;
-}
+}*/
 
 /* centrado vertical */
 .centrado {
@@ -119,17 +125,16 @@ img {
 } 
 
 .row {
-	background-color: #FEFAE9;
+	background-color: #FFFEFB;
 	height: 100%;
 	width: 100%;
-	display: block;
 }
 
 .txt-container {
 	overflow: hidden;
 	position: relative;
 	float: right;
-	background-color:#FEFAE9;
+	background-color: #FFFEFB;
 	height: 100%;
 }
 
@@ -137,7 +142,8 @@ img {
 	overflow: hidden;
 	position: relative;
 	float: left;
-	background-color:#FEFAE9;
+	background-color: #FFFEFB;
+	height: 100%;
 }
 
 /*													TIPOGRAFIAS */
@@ -151,7 +157,14 @@ img {
 	max-width: 10em;
 	padding-top: .6em;
 	text-shadow: 1px 1px rgba(0,0,0,0.23);
+	margin-left: 20%;
 }
+
+@media screen and (max-width: 960px){
+		#portada p {
+			margin-left:2%;
+		}
+	}
 
 .recorridos p {
 	font-family: Merriweather;
@@ -165,10 +178,8 @@ img {
 }
 
 .txt {
-	padding: 2em;
-	margin: 0 auto;	
+	padding: 1.4em;
 	text-align: justify;
-	vertical-align: center center;
 }
 
 .fuente {
