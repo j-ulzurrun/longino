@@ -9,7 +9,15 @@
 }
 
 body{
-	background-color: #FEFAE9;
+	background-color: #FFFEFB;
+	height: 100%;
+}
+
+.fondo{
+	background-color: #FFFEFB;
+	margin-top: 100vh;
+	position: absolute;
+	width: 100%;
 }
 
 p {
@@ -18,15 +26,30 @@ p {
 	font-size: 1em; 
 	line-height: 2.1em;
 	color: #2C2C2C;
+	-webkit-hyphens: auto;
+  	-moz-hyphens: auto;
+  	-ms-hyphens: auto;
+  	-o-hyphens: auto;
+	hyphens: auto;
 }
 
 h1{
 	font-family: Montserrat;
 	font-weight: 700;
 	font-size: 3.2em;
-	color: #000;
+	color: #FFFEFB;
 	padding-bottom: .4em;
+	text-shadow: 2px 2px rgba(0,0,0,0.23);
+	display: block;
+	margin-left: 20%;
 }
+
+@media screen and (max-width: 549px){
+		h1 {
+			font-size: 2.6em;
+			margin-left:3%;
+		}
+	}
 
 h2 {
 	font-family: Montserrat;
@@ -51,37 +74,68 @@ a {
 	text-decoration: none;
 }
 
-section {
-  height: 100vh;
-}
-
 blockquote {
 	font-family: Merriweather;
 	font-style: italic;
 	font-weight: 300;
 	font-size: 1em;
-	line-height: 2.4em;
+	line-height: 2em;
+
 	color:#252B38;
+	margin:1em 20px;
 }
 
 img {
 	width:100%;
+	height: 100%;
 }
 
+section{
+	height: 100vh;
+}
 
 /*													 CONTENEDORES */
 
-.portada {
+#portada {
 	width: 100%;
 	padding-top: 6em;
 	padding-bottom: 4em;
+	position: fixed;
+	z-index: -9999;
+	background: url(../img/cg.jpg);
+	background-size: cover;
+	background-position: bottom;
 }
 
 .recorridos {
-	background-color: #F7EADD;
+	background-color: #FDF9F4;
 	width: 100%;
 	padding-top: 4em;
 	padding-bottom: 6em;
+	height: 100vh;
+	box-shadow: 0px -3px 35px -10px rgba(0,0,0,0.75);
+}
+
+.recorridos a{
+	color: #000;
+}
+
+.recorridos a:hover{
+	color:#AF8401;
+}
+
+/* centrado horizontal 
+.centro {
+	max-width: 14em;
+	margin: 0 auto;
+	padding: 0 !important;
+}*/
+
+/* centrado vertical */
+.centrado {
+	position: relative;
+ 	top: 50%;
+	transform: translateY(-50%);
 }
 
 /* separador de titulos */
@@ -93,21 +147,46 @@ img {
 } 
 
 .row {
-	background-color: #F7EADD;
-	z-index: 3;
+	background-color: #FFFEFB;
+	height: 100%;
+	width: 100%;
 }
 
+.txt-container {
+	overflow: hidden;
+	position: relative;
+	float: right;
+	background-color: #FFFEFB;
+	height: 100%;
+}
+
+.txt-container2 {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	background-color: #FFFEFB;
+	height: 100%;
+}
 
 /*													TIPOGRAFIAS */
 
-.portada p{
+#portada p{
 	font-size: 1.4em;
-	color: #000;
+	color: #F7EADD;
 	font-style: italic;
 	border-top: 2px solid #AF8401;
+	box-shadow: 0px -1px 3px -3px rgba(0,0,0,0.75); 
 	max-width: 10em;
 	padding-top: .6em;
+	text-shadow: 1px 1px rgba(0,0,0,0.23);
+	margin-left: 20%;
 }
+
+@media screen and (max-width: 549px){
+		#portada p {
+			margin-left:3%;
+		}
+	}
 
 .recorridos p {
 	font-family: Merriweather;
@@ -120,23 +199,9 @@ img {
 	line-height: 0;
 }
 
-.txt-derecha {
-	padding:1em;
-	margin:0 auto;
-	display: block;
-	z-index: 20;
-	float: right;
-	background-color:#FEFAE9;
+.txt {
+	padding: 1.4em;
 	text-align: justify;
-
-}
-
-.txt-izquierda {
-	padding:1em;
-	margin:0 auto;
-	display: block;
-	z-index: 20;
-	float: right;
 }
 
 .fuente {
@@ -151,6 +216,17 @@ img {
 }
 
 /*												SECCIONES*/
-.calera {
-	background: url(longino/img/01.jpg);
+#calera {
+	background: url(img/__calera.png);
+	background-size: cover;
+	background-position: 0 50%;
+	display: block;
+
+}
+
+#calera1 {
+	background: url(img/__calera2.png);
+	background-size: cover;
+	background-position: 0 50%;
+	display: block;
 }
