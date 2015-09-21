@@ -13,9 +13,30 @@ body{
 	height: 100%;
 }
 
+footer{
+	background: #FDF9F4;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+footer p{
+	font-family: 'Open Sans';
+	margin: 0;
+	padding: 0 10px;
+	line-height: 1.5em;
+}
+
+.fut{
+	margin: 20px 0;
+}
+
 .fondo{
 	background-color: #FFFEFB;
 	margin-top: 100vh;
+	padding-bottom: 60vh;
 	position: absolute;
 	width: 100%;
 }
@@ -147,7 +168,6 @@ section{
 } 
 
 .row {
-	background-color: #FFFEFB;
 	height: 100%;
 	width: 100%;
 }
